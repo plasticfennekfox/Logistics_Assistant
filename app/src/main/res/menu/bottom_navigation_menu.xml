@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_tasks"
+        android:title="Задания"
+        android:icon="@drawable/ic_launcher_foreground" />
+    <item
+        android:id="@+id/menu_charts"
+        android:title="Графики"
+        android:icon="@drawable/ic_launcher_foreground" />
+    <item
+        android:id="@+id/menu_chat"
+        android:title="Чат"
+        android:icon="@drawable/ic_launcher_foreground" />
+    <item
+        android:id="@+id/menu_profile"
+        android:title="Профиль"
+        android:icon="@drawable/ic_launcher_foreground" />
+</menu>

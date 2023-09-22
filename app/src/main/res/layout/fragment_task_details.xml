@@ -1,0 +1,276 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@color/ligtngrayblue"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:background="@drawable/rounded_background_white"
+
+            >
+            <!-- Тип груза -->
+            <TextView
+                android:id="@+id/styl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-thin"
+                android:text="Тип груза"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewCargoType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text=""
+                android:textSize="16sp" />
+
+            <!-- Город исполнения -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Город исполнения"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-thin"
+
+                />
+
+            <TextView
+                android:id="@+id/textViewExecutionCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text=""
+                android:textSize="16sp" />
+
+            <!-- Дата заказа -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Дата заказа"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-thin"
+                />
+
+            <TextView
+                android:id="@+id/textViewOrderDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text=""
+                android:textSize="16sp" />
+
+            <!-- Время прибытия -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Время прибытия"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-thin"
+                />
+
+            <TextView
+                android:id="@+id/textViewArrivalTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text=""
+                android:textSize="16sp" />
+
+            <!-- Начальная точка маршрута -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Начальная точка маршрута"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-thin"
+                />
+
+            <TextView
+                android:id="@+id/textViewStartLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text=""
+                android:textSize="16sp" />
+
+            <!-- Конечная точка маршрута -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Конечная точка маршрута"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-thin"
+                />
+
+            <TextView
+                android:id="@+id/textViewEndLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text=""
+                android:textSize="16sp" />
+
+            <!-- Тип кузова -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Тип кузова"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-thin"
+                />
+
+            <TextView
+                android:id="@+id/textViewTruckType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text=""
+                android:textSize="16sp" />
+
+            <!-- Детали заказа -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Детали заказа"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-thin"
+                />
+
+            <TextView
+                android:id="@+id/textViewOrderDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text=""
+                android:textSize="16sp" />
+
+            <!-- Параметры по оплате -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Параметры по оплате"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-thin"
+                />
+
+            <TextView
+                android:id="@+id/textViewPaymentDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text=""
+                android:textSize="16sp" />
+
+            <!-- Контакты -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Контакты"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-thin"
+                />
+
+            <TextView
+                android:id="@+id/textViewContacts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text=""
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Имя Фамилия Отчество"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    <!-- Рамка "Правила клиента" -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+
+        android:paddingTop="20dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@drawable/rounded_background_white"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Правила клиента"
+            android:textSize="18sp"
+            android:textStyle="bold"
+             />
+
+        <!-- Кнопка "Скачать" -->
+        <Button
+            android:id="@+id/buttonDownloadRules"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Скачать"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/ligtngrayblue"
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+
+    <!-- Кнопки "Принять" и "Отказаться" -->
+
+
+        <Button
+            android:id="@+id/buttonAccept"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#2B2D35"
+            android:textColor="#FFFFFF"
+            android:text="Принять" />
+
+        <Button
+            android:id="@+id/buttonDecline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#D2DCEA"
+
+            android:text="Отказаться"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+</ScrollView>

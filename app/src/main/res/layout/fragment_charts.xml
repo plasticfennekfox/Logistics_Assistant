@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@drawable/rounded_background_blue">
+
+    <!-- Горизонтальные кнопки "рабочий"/"выходной" -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonWork"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/gray_text_color"
+            android:textColor="@color/black"
+            android:text="Рабочий" />
+
+        <Button
+            android:id="@+id/buttonDayOff"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:text="Выходной" />
+    </LinearLayout>
+
+    <!-- Календарь на месяц -->
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_background_white"
+        />
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp">
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_background_white"
+            android:visibility="gone"
+            ><!-- По умолчанию скрыто -->
+            <TextView
+                android:id="@+id/textViewSelectedDay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:text=""
+                android:textSize="18sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Смена"
+                android:textSize="18sp"
+                />
+
+            <!-- Добавьте поле выбора параметра (выходной день / Рабочий день) -->
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/radioButtonWorkDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Рабочий день" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonDayOff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Выходной день" />
+            </RadioGroup>
+
+            <!-- Кнопки "Сохранить" и "Отменить" -->
+            <Button
+                android:id="@+id/buttonSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/dark"
+                android:textColor="#FFFFFF"
+                android:text="Сохранить" />
+
+            <Button
+                android:id="@+id/buttonCancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="@color/gray_text_color"
+                android:textColor="#FFFFFF"
+                android:text="Отменить" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

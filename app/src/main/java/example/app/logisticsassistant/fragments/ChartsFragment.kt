@@ -36,7 +36,7 @@ class ChartsFragment : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_charts, container, false)
 
-        // Найдите и инициализируйте ваши элементы интерфейса здесь
+
         buttonWork = view.findViewById(R.id.buttonWork)
         buttonDayOff = view.findViewById(R.id.buttonDayOff)
         calendarView = view.findViewById(R.id.calendarView)
@@ -49,15 +49,15 @@ class ChartsFragment : Fragment() {
         buttonSave = view.findViewById(R.id.buttonSave)
         buttonCancel = view.findViewById(R.id.buttonCancel)
 
-        // Установите слушатели событий для кнопок и календаря
+
         buttonWork.setOnClickListener {
             // Обработка нажатия на кнопку "Рабочий"
-            // Здесь вы можете выполнить необходимые действия
+
         }
 
         buttonDayOff.setOnClickListener {
             // Обработка нажатия на кнопку "Выходной"
-            // Здесь вы можете выполнить необходимые действия
+
         }
 
         calendarView.setOnDateChangeListener { _, year, month, dayOfMonth ->
@@ -70,22 +70,22 @@ class ChartsFragment : Fragment() {
             containeR.visibility = View.VISIBLE
         }
 
-        // Установите слушатель события для кнопки "Сохранить"
+
         buttonSave.setOnClickListener {
-            // Получите выбранную дату
+            // дата
             val selectedDate = textViewSelectedDay.text.toString()
-            // Получите выбранный параметр
+            // параметр
             val selectedParameter = if (radioButtonWorkDay.isChecked) "Рабочий день" else "Выходной день"
-            // Выполните необходимые действия с выбранными данными
-            // Например, вы можете отправить данные на сервер или сохранить их локально
+            //  необходимые действия с выбранными данными
+            //
             Toast.makeText(requireContext(), "Сохранено: $selectedDate, $selectedParameter", Toast.LENGTH_SHORT).show()
-            // Скройте контейнер после сохранения
+            // скрыть контейнер после сохранения
             containeR.visibility = View.GONE
         }
 
-        // Установите слушатель события для кнопки "Отменить"
+        // слушатель события для кнопки "Отменить"
         buttonCancel.setOnClickListener {
-            // Скройте контейнер без сохранения
+            // скрыть контейнер без сохранения
             containeR.visibility = View.GONE
         }
 

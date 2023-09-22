@@ -25,13 +25,12 @@ class TasksFragment : Fragment() {
 
         recyclerView = view.findViewById(R.id.recyclerView)
 
-        // Создайте список заданий и передайте его в адаптер
+        // создать список заданий и передать его в адаптер
         val taskDataList = createTaskDataList()
         val currentTaskPosition = 1
-        // Установите текущее задание
-        setCurrentTask(taskDataList, currentTaskPosition) // Указывайте позицию текущего задания
+        // Установить текущее задание
+        setCurrentTask(taskDataList, currentTaskPosition)
 
-        // Создайте адаптер и передайте в него обновленный список заданий
         adapter = TasksAdapter(taskDataList)
 
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
@@ -45,7 +44,7 @@ class TasksFragment : Fragment() {
     private fun createTaskDataList(): List<TaskData> {
         // Создайте и заполните список данных о заданиях
         // Каждый элемент списка представляет собой одно задание
-        // Например:
+
         val taskList = mutableListOf<TaskData>()
         taskList.add(TaskData("Мебель 1", "Текущее задание", "Адрес отправки 1", "Адрес доставки 1", "Детали заказа 1", "Параметры по оплате 1",false))
         taskList.add(TaskData("Мебель 2", "Текущее задание", "Адрес отправки 2", "Адрес доставки 2", "Детали заказа 2", "Параметры по оплате 2",true))
@@ -54,8 +53,8 @@ class TasksFragment : Fragment() {
         taskList.add(TaskData("Мебель 1", "Текущее задание", "Адрес отправки 1", "Адрес доставки 1", "Детали заказа 1", "Параметры по оплате 1",false))
         taskList.add(TaskData("Мебель 2", "Текущее задание", "Адрес отправки 2", "Адрес доставки 2", "Детали заказа 2", "Параметры по оплате 2",false))
 
-
-        // Добавьте другие задания в список
+        //
+        // И тд
 
         return taskList
     }

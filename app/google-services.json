@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "276283176248",
+    "project_id": "sn-punto",
+    "storage_bucket": "sn-punto.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:276283176248:android:ba14208c099a658803fdcd",
+        "android_client_info": {
+          "package_name": "punto.app.italhose"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_YCSiLMRRHjoNCCy_NYu6dOzGExF98Ao"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

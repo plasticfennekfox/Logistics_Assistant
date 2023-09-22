@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var bottomNavigationView: BottomNavigationView
     private lateinit var toolbar: Toolbar
 
-    // Добавим переменную для сохранения состояния фрагмента
+    // переменная для сохранения состояния фрагмента
     private var selectedFragmentId: Int = R.id.menu_tasks
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
 
         // Установка слушателя для обработки выбора элементов навигации
         bottomNavigationView.setOnNavigationItemSelectedListener { item ->
-            selectedFragmentId = item.itemId // Сохраняем выбранный элемент
+            selectedFragmentId = item.itemId
             when (item.itemId) {
                 R.id.menu_tasks -> {
                     loadFragment(TasksFragment())
@@ -72,7 +72,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
-        // Сохраняем состояние, например, выбранный фрагмент
+        // Сохраняем состояние
         outState.putInt("selectedFragmentId", selectedFragmentId)
         super.onSaveInstanceState(outState)
     }
@@ -90,9 +90,6 @@ class MainActivity : AppCompatActivity() {
     override fun onBackPressed() {
         finishAffinity()
     }
-
-
-
 
 
 }

@@ -13,7 +13,7 @@ class ProfileFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Здесь разместите макет для фрагмента "Профиль"
+        // макет для фрагмента "Профиль"
         return inflater.inflate(R.layout.fragment_profile, container, false)
     }
 }

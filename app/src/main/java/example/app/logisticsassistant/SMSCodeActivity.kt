@@ -30,7 +30,7 @@ class SMSCodeActivity : AppCompatActivity() {
                 resendCodeTextView.setTextColor(getColor(R.color.red_text_color))
                 resendCodeTextView.isClickable = true
                 resendCodeTextView.setOnClickListener {
-                    // Здесь можно реализовать логику отправки повторного кода
+                    // Здесь могла быть логика отправки повторного кода
                     startCountdown() // Запустить таймер снова
                     resendCodeTextView.setTextColor(getColor(R.color.gray_text_color))
                     resendCodeTextView.isClickable = false // После нажатия делаем строку некликабельной
@@ -56,7 +56,7 @@ class SMSCodeActivity : AppCompatActivity() {
 
         if (enteredCode == correctCode) {
             showToast("Код верный")
-            // Здесь вы можете добавить логику для авторизации пользователя
+            // Здесь могла быть логика для авторизации пользователя
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish()

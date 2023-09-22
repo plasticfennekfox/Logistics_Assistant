@@ -18,7 +18,7 @@ class TaskDetailsFragment : Fragment() {
         fun newInstance(task: TaskData): TaskDetailsFragment {
             val fragment = TaskDetailsFragment()
             val args = Bundle()
-            // Здесь добавьте данные задания в аргументы
+            // Здесь данные задания в аргументы
             args.putParcelable("task", task)
             fragment.arguments = args
             return fragment
@@ -62,19 +62,19 @@ class TaskDetailsFragment : Fragment() {
         // Обработчик кнопки "Скачать"
         val downloadButton = view.findViewById<Button>(R.id.buttonDownloadRules)
         downloadButton.setOnClickListener {
-            // Добавьте код для скачивания правил клиента
+
         }
 
         // Обработчик кнопки "Принять"
         val acceptButton = view.findViewById<Button>(R.id.buttonAccept)
         acceptButton.setOnClickListener {
-            // Добавьте код для обработки действия "Принять"
+
         }
 
         // Обработчик кнопки "Отказаться"
         val declineButton = view.findViewById<Button>(R.id.buttonDecline)
         declineButton.setOnClickListener {
-            // Добавьте код для обработки действия "Отказаться"
+
         }
 
         // Получаем ссылку на активность

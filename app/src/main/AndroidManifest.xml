@@ -36,7 +36,10 @@
         <activity
             android:name=".SMSCodeActivity"
             android:label="Ввод кода из SMS">
+        </activity>
 
+        <activity android:name=".ChatActivity">
+            <!-- Здесь могут быть другие атрибуты активности -->
         </activity>
 
 

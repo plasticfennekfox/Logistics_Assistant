@@ -58,12 +58,13 @@
 
         <ImageButton
             android:id="@+id/buttonback"
-            android:layout_width="51dp"
-            android:layout_height="51dp"
+            android:layout_width="38dp"
+            android:layout_height="35dp"
             android:layout_marginStart="12dp"
+            android:background="@color/white"
+            android:onClick="onBackButtonClick"
             android:scaleType="centerCrop"
             android:src="@drawable/left"
-            android:onClick="onBackButtonClick"
             app:layout_constraintBottom_toBottomOf="@+id/textView6"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/textView6"

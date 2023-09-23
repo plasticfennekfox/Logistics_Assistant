@@ -19,7 +19,7 @@ class TasksAdapter(private val taskDataList: List<TaskData>) : RecyclerView.Adap
         val deliveryAddressTextView: TextView = itemView.findViewById(R.id.textViewDeliveryAddress)
         val orderDetailsTextView: TextView = itemView.findViewById(R.id.textViewOrderDetails)
         val paymentDetailsTextView: TextView = itemView.findViewById(R.id.textViewPaymentDetails)
-        val detailsButton: Button = itemView.findViewById(R.id.buttonViewDetails) // Добавляем кнопку
+        val detailsButton: Button = itemView.findViewById(R.id.buttonViewDetails)
         val workDoneTextView: TextView  = itemView.findViewById(R.id.textViewWorkDone)
     }
 

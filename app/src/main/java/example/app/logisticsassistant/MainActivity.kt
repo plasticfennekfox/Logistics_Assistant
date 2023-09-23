@@ -88,7 +88,19 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onBackPressed() {
-        finishAffinity()
+        val tasksFragment = TasksFragment()
+        // Проверяем, открыт ли фрагмент "Задания"
+        if (selectedFragmentId == R.id.menu_tasks) {
+            // Если фрагмент "Задания" открыт, то выходим из приложения
+            finishAffinity()
+        } else {
+            // Если открыт другой фрагмент, то возвращаемся к фрагменту "Задания"
+            loadFragment(tasksFragment)
+            setToolbarTitle("Задания")
+            bottomNavigationView.selectedItemId = R.id.menu_tasks
+            selectedFragmentId = R.id.menu_tasks
+        }
+        //finishAffinity()
     }
 
 

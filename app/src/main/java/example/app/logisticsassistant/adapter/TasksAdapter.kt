@@ -10,8 +10,8 @@ import androidx.recyclerview.widget.RecyclerView
 import example.app.logisticsassistant.R
 import example.app.logisticsassistant.fragments.TaskDetailsFragment
 
-class TasksAdapter(private val taskDataList: List<TaskData>) : RecyclerView.Adapter<TasksAdapter.TaskViewHolder>() {
-
+class TasksAdapter(private val taskDataList: List<TaskData>) : RecyclerView.Adapter<TasksAdapter.TaskViewHolder>()
+{
     inner class TaskViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val furnitureTextView: TextView = itemView.findViewById(R.id.textViewFurniture)
         val currentTaskTextView: TextView = itemView.findViewById(R.id.textViewCurrentTask)
